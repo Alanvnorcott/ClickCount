@@ -1,0 +1,83 @@
+/* popup.css */
+
+@font-face {
+    font-family: 'Wood'; /* Specify the desired font family name */
+    src: url('fonts/Wood.otf') format('opentype'); /* Adjust the path based on your font file and format */
+}
+
+body {
+    font-family: 'Wood', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right,#2d2d2d, #030301);
+    margin: 0;
+    padding: 10px;
+    color: #EAEAEA;
+    letter-spacing: 2px;
+}
+
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #D95D39;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px; /* Increase the font size for h2 */
+}
+
+.title {
+    font-family: 'Wood', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #D95D39;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px; /* Increase the font size for h2 */
+}
+.stat {
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #eff1f3;
+}
+
+/* Add these styles for stat names and values */
+.stat-name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #D95D39; /* Set the color for stat names */
+    font-weight: bold; /* Optionally, make stat names bold */
+}
+
+.stat-value {
+    color: #eff1f3 ; /* Set the color for stat values */
+}
+.button-container {
+    display: flex; /* Use flexbox to make the buttons appear side by side */
+    justify-content: space-between; /* Add space between the buttons */
+}
+button {
+    background-color: #D95D39; /* Blue background color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #282c34; /* Dark text color to contrast with the background */
+    padding: 10px 10px; /* Padding inside the button */
+    font-size: 18px; /* Font size */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    margin-right: 10px;
+}
+
+/* Style the button on hover */
+button:hover {
+    background-color: #FF5700; /* Darker background color on hover */
+}
+
+dialog {
+    color: #FF5700;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #282c34;
+    font-size: 18px; /* Font size */
+}

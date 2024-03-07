@@ -1,0 +1,34 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your ClickCount Stats</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <script src="popup.js"></script>
+    <script src="background.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2 class="title">ClickCount Stats</h2>
+    <p class="stat"><span class="stat-name">Pages Visited:</span> <span id="pagesVisited" class="stat-value"></span></p>
+    <p class="stat"><span class="stat-name">Click Count:</span> <span id="mouseClicks" class="stat-value"></span></p>
+    <p class="stat"><span class="stat-name">Most Visited Page:</span> <span id="mostVisitedPage" class="stat-value"></span></p>
+    <p class="stat"><span class="stat-name">Time Online:</span> <span id="timeOnline" class="stat-value"></span></p>
+</div>
+<!-- Add a container for the buttons -->
+<div class="button-container">
+    <button type="button" id="clearAllButton">Clear All</button>
+    <button type="button" id="achievementsButton">Achievements</button>
+    <button type="button" id="contactsButton">Contact</button>
+</div>
+<dialog id="contactDialog">
+    <p>Email: your.email@example.com</p>
+    <p>LinkedIn: linkedin.com/in/your-profile</p>
+    <button id="closeContactDialog">Close</button>
+</dialog>
+<dialog id="clearAllMessage">
+    <p>Stats cleared!</p>
+    <button id="closeDialog">Close</button>
+</dialog>
+</body>
+</html>
